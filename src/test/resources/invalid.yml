@@ -1,0 +1,6 @@
+string: 1
+field: value
+integerArray:
+  - string
+  - 2
+  - 3
