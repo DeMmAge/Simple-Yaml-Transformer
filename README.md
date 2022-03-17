@@ -5,8 +5,8 @@
 <!-- MarkdownTOC -->
 
 * [About](#About)
-* [Usage examples](#Usage examples)
-* [Maven dependency](#Maven dependency)
+* [Usage examples](#Usage-examples)
+* [Maven dependency](#Maven-dependency)
 
 <!-- /MarkdownTOC -->
 </details>
