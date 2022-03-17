@@ -8,7 +8,7 @@
 
 * [About](#About)
 * [Usage examples](#Usage-examples)
-* [Maven dependency](#Maven-dependency)
+* [Maven dependency](#Dependencies)
 
 <!-- /MarkdownTOC -->
 </details>
@@ -77,8 +77,13 @@ public class Clazz {
 [main] INFO YamlTransformerTest - Pojo(string=value, integer=1, integerArray=[1, 2, 3])
 ```
 
-## Maven dependency
+## Dependencies
 
+__Jitpack:__
 ```xml
-TBD
+<dependency>
+    <groupId>com.github.DeMmAge</groupId>
+    <artifactId>Simple-Yaml-Transformer</artifactId>
+    <version>1.0.0</version>
+</dependency>
 ```
