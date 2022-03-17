@@ -8,7 +8,9 @@
 
 * [About](#About)
 * [Usage examples](#Usage-examples)
-* [Maven dependency](#Dependencies)
+* [Dependencies](#Dependencies)
+  * [Jitpack](#Jitpack)
+  * [Maven Central](#Maven-Central)
 
 <!-- /MarkdownTOC -->
 </details>
@@ -79,11 +81,16 @@ public class Clazz {
 
 ## Dependencies
 
-__Jitpack:__
+### Jitpack
 ```xml
 <dependency>
     <groupId>com.github.DeMmAge</groupId>
     <artifactId>Simple-Yaml-Transformer</artifactId>
     <version>1.0.0</version>
 </dependency>
+```
+
+### Maven Central
+```xml
+TBD
 ```
