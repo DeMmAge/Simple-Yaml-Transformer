@@ -55,6 +55,21 @@
             <version>${slf4j.version}</version>
         </dependency>
 
+<!--        <dependency>-->
+<!--            <groupId>com.github.DeMmAge</groupId>-->
+<!--            <artifactId>Simple-Yaml-Transformer</artifactId>-->
+<!--            <version>master-SNAPSHOT</version>-->
+<!--        </dependency>-->
+
     </dependencies>
+
+    <repositories>
+
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+
+    </repositories>
 
 </project>

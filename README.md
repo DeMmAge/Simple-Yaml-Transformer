@@ -1,3 +1,5 @@
+[![](https://jitpack.io/v/DeMmAge/Simple-Yaml-Transformer.svg)](https://jitpack.io/#DeMmAge/Simple-Yaml-Transformer)
+
 # Simple Yaml2Java Transformer
 
 <details open>
