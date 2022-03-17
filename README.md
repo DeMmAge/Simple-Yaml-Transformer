@@ -9,8 +9,9 @@
 * [About](#About)
 * [Usage examples](#Usage-examples)
 * [Dependencies](#Dependencies)
-  * [Jitpack](#Jitpack)
-  * [Maven Central](#Maven-Central)
+    * [Jitpack](#Jitpack)
+    * [Maven Central](#Maven-Central)
+* [Contacts, Trello Board, Chats](#Contacts)
 
 <!-- /MarkdownTOC -->
 </details>
@@ -31,21 +32,22 @@ __file.yml:__
 string: value
 integer: 1
 integerArray:
-    - 1
-    - 2
-    - 3
+  - 1
+  - 2
+  - 3
 ```
 
 __Pojo.java:__
+
 ```java
 package com.example;
 
 public class Pojo {
-    
+
     private String string;
     private int integer;
     private int[] integerArray;
-    
+
     // Constructor, Getters n Setters, etc
 }
 ```
@@ -60,7 +62,7 @@ import dev.demmage.simpleyamlreader.YamlTransformer;
 public class Clazz {
 
     private static final YamlTransformer transformer = new YamlTransformer();
-    
+
     // Get file from class loader
     public Pojo getTransformedPojoFromClassLoaderFile() {
         return transformer.getTransformedObjectFromClassLoader("file.yml", Pojo.class);
@@ -76,12 +78,28 @@ public class Clazz {
 #### Result
 
 ```java
-[main] INFO YamlTransformerTest - Pojo(string=value, integer=1, integerArray=[1, 2, 3])
+[main]INFO YamlTransformerTest-Pojo(string=value,integer=1,integerArray=[1,2,3])
 ```
 
 ## Dependencies
 
 ### Jitpack
+
+#### Add Jitpack repository in `<repositories>` section in __`pom.xml`__:
+
+```xml
+<repositories>
+
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
+
+</repositories>
+```
+
+#### Add Simple-Yaml-Transformer dependency:
+
 ```xml
 <dependency>
     <groupId>com.github.DeMmAge</groupId>
@@ -91,6 +109,11 @@ public class Clazz {
 ```
 
 ### Maven Central
+
 ```xml
 TBD
 ```
+
+## Contacts
+
+* [Trello board](https://trello.com/b/sPo2h5qC)
