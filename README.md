@@ -11,6 +11,7 @@
 * [Dependencies](#Dependencies)
     * [Maven](#Maven)
     * [Jitpack](#Jitpack)
+    * [Github packages](#Github-packages)
     * [Maven Central](#Maven-Central)
     * [Gradle](#Gradle)
 * [Contacts, Trello Board, Chats](#Contacts)
@@ -45,11 +46,9 @@ __Pojo.java:__
 package com.example;
 
 public class Pojo {
-
     private String string;
     private int integer;
     private int[] integerArray;
-
     // Constructor, Getters n Setters, etc
 }
 ```
@@ -62,7 +61,6 @@ package com.example;
 import dev.demmage.simpleyamlreader.YamlTransformer;
 
 public class Clazz {
-
     private static final YamlTransformer transformer = new YamlTransformer();
 
     // Get file from class loader
@@ -94,10 +92,10 @@ Add Jitpack repository in `<repositories>` section in __`pom.xml`__:
 ```xml
 <repositories>
 
-  <repository>
-    <id>jitpack.io</id>
-    <url>https://jitpack.io</url>
-  </repository>
+    <repository>
+        <id>jitpack.io</id>
+        <url>https://jitpack.io</url>
+    </repository>
 
 </repositories>
 ```
@@ -106,6 +104,18 @@ Add Jitpack repository in `<repositories>` section in __`pom.xml`__:
 <dependency>
     <groupId>com.github.DeMmAge</groupId>
     <artifactId>Simple-Yaml-Transformer</artifactId>
+    <version>${project.version}</version>
+</dependency>
+```
+
+#### Github packages
+
+[Github packages](https://github.com/DeMmAge?tab=packages&repo_name=Simple-Yaml-Transformer)
+
+```xml
+<dependency>
+    <groupId>dev.demmage</groupId>
+    <artifactId>simple-yaml-reader</artifactId>
     <version>${project.version}</version>
 </dependency>
 ```
@@ -122,10 +132,10 @@ TBD
 
 ```groovy
 allprojects {
-  repositories {
-    ...
-    maven { url 'https://jitpack.io' }
-  }
+    repositories {
+        ...
+        maven { url 'https://jitpack.io' }
+    }
 }
 ```
 
@@ -133,7 +143,7 @@ allprojects {
 
 ```groovy
 dependencies {
-  implementation 'com.github.DeMmAge:Simple-Yaml-Transformer:Tag'
+    implementation 'com.github.DeMmAge:Simple-Yaml-Transformer:Tag'
 }
 ```
 
