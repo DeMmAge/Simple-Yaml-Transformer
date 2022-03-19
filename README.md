@@ -106,7 +106,7 @@ Add Jitpack repository in `<repositories>` section in __`pom.xml`__:
 <dependency>
     <groupId>com.github.DeMmAge</groupId>
     <artifactId>Simple-Yaml-Transformer</artifactId>
-    <version>1.0.0</version>
+    <version>${project.version}</version>
 </dependency>
 ```
 
