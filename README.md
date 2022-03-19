@@ -9,8 +9,10 @@
 * [About](#About)
 * [Usage examples](#Usage-examples)
 * [Dependencies](#Dependencies)
+    * [Maven](#Maven)
     * [Jitpack](#Jitpack)
     * [Maven Central](#Maven-Central)
+    * [Gradle](#Gradle)
 * [Contacts, Trello Board, Chats](#Contacts)
 
 <!-- /MarkdownTOC -->
@@ -83,22 +85,22 @@ public class Clazz {
 
 ## Dependencies
 
-### Jitpack
+### Maven
 
-#### Add Jitpack repository in `<repositories>` section in __`pom.xml`__:
+#### Jitpack
+
+Add Jitpack repository in `<repositories>` section in __`pom.xml`__:
 
 ```xml
 <repositories>
 
-    <repository>
-        <id>jitpack.io</id>
-        <url>https://jitpack.io</url>
-    </repository>
+  <repository>
+    <id>jitpack.io</id>
+    <url>https://jitpack.io</url>
+  </repository>
 
 </repositories>
 ```
-
-#### Add Simple-Yaml-Transformer dependency:
 
 ```xml
 <dependency>
@@ -108,10 +110,31 @@ public class Clazz {
 </dependency>
 ```
 
-### Maven Central
+#### Maven Central
 
 ```xml
 TBD
+```
+
+### Gradle
+
+#### Add repository at ``repositories`` section:
+
+```groovy
+allprojects {
+  repositories {
+    ...
+    maven { url 'https://jitpack.io' }
+  }
+}
+```
+
+#### Add implementation:
+
+```groovy
+dependencies {
+  implementation 'com.github.DeMmAge:Simple-Yaml-Transformer:Tag'
+}
 ```
 
 ## Contacts
